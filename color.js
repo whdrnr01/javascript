@@ -1,34 +1,34 @@
-var Body = {
-    setBackgroundColor: (color) => {
-        document.querySelector('body').style.backgroundColor = color;
-    },
-    setColor: (color) => {
-        document.querySelector('body').style.color = color;
+$( document ).ready(function() {
+    $('body').css('backgroundColor', 'white');
+    $('body').css('color', 'black');
+    $('a').css('color', 'blue');
+
+    var Body = {
+        setBackgroundColor: (color) => {
+            $('body').css('backgroundColor', color);
+        },
+        setColor: (color) => {
+            $('body').css('color', color);
+        }
     }
-}
 
-var Links = {
-    setColor: (color) => {
-        var alist = document.querySelectorAll('a');
-        alist.forEach((alink) => {
-            alink.style.color = color;
-        });
+    var Links = {
+        setColor: (color) => {
+            $('a').css('color', color);
+        }
     }
-}
 
-function nightDayHandler(self) {
-    var target = document.querySelector('body');
-    if (self.value === 'night') {
-        Body.setBackgroundColor('black');
-        Body.setColor('white');
-        self.value = 'day';
-
-        Links.setColor('powderblue');
-    } else {
-        Body.setBackgroundColor('white');
-        Body.setColor('black');
-        self.value = 'night';
-
-        Links.setColor('blue');
-    }
-}
+    $('#nightDay').on('click', function() {
+        if(this.value === 'night') {
+            Body.setBackgroundColor('black');
+            Body.setColor('white');
+            Links.setColor('powderblue');
+            this.value = 'day';
+        } else {
+            Body.setBackgroundColor('white');
+            Body.setColor('black');
+            Links.setColor('blue');
+            this.value = 'night';
+        }
+    });
+});
