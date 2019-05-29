@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script src="color.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1><a href="index.html">WEB Program Languages</a></h1>
+            <input type="button" id="night_day" value="night" onclick="nightDayHandler(this)"
+                class="btn btn-primary btn-xl">
+            <script>
+                var Languages = ['HTML', 'CSS', 'Javascript', 'Node'];
+            </script>
+            <ul>
+                <script>
+                    var i = 1;
+                    Languages.forEach((element) => {
+                        document.write('<li><a href="'+i+'.html">' + element + '</a></li>');
+                        i = i + 1;
+                    });
+                </script>
+            </ul>
+            <h3>HTML</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eligendi ratione iusto? Omnis
+                sequi, voluptates quasi labore nisi porro facere possimus eveniet repellendus a perferendis modi
+                deserunt, dolorem quam maxime! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ut
+                aspernatur nobis voluptas consequuntur iusto officiis facilis, expedita quisquam culpa molestiae alias
+                voluptatem itaque id corporis unde atque qui. Sequi?Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Laudantium consequatur itaque et corporis, libero atque placeat, ducimus voluptate pariatur
+                molestiae, voluptates quaerat vero perspiciatis voluptas doloremque illo. Repellendus, eum <sed
+                    class="lorem"></sed>
+            </p>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
