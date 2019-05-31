@@ -8,5 +8,6 @@
 --------------------------
 ### Structure
 - HTML/CSS
+- geolocation is not working
 - Darksky API
 - Icons
