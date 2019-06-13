@@ -1,70 +1,40 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Javascript Calculator</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    <style>
-        #result {
-            font-size: 4rem;
-            color: gray;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calulator</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="container">
+<body class="bg-gray-200">
+    <div class="flex p-6 bg-white rounded-lg shadow-xl mx-auto max-w-md my-10">
+        <div class="flex-shrink-0">
+            <img src="img/chat-logo.png" class="h-12 w-12">
+        </div>
+        <div class="ml-6 pt-1">
+            <h4 class="text-xl text-gray-900 leading-tight">ChitChat</h4>
+            <p class="text-base text-gray-600 leading-normal">You have a new message</p>
+        </div>
+    </div>
 
-        <div class="input-group">
+    <div class="flex p-6 my-10 mx-auto max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="sm:flex sm:items-center px-6 py-4">
+            <img src="img/sky.jpg" class="block mx-auto sm:mx-0 sm:flex-shrink-0 h-16 sm:h-24 rounded-full">
 
-            <div class="input-group">
-                <div class="input-group-addon">Value1</div>
-                <input type="text" class="form-control" id="value1">
-            </div>
-
-
-            <div class="input-group">
-                <div class="input-group-addon">Value2</div>
-                <input type="text" class="form-control" id="value2">
-            </div>
-
-
-            <div class="form-group">
-                <label for="input" class="col-sm-2 control-label">Operator</label>
-                <div class="col-sm-10">
-                    <select id="operator" class="form-control">
-                        <option value="add">Add</option>
-                        <option value="min">Minus</option>
-                        <option value="div">Divide</option>
-                        <option value="mul">Multiply</option>
-                    </select>
+            <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
+                <p class="text-xl leading-tight">Chris Cookie</p>
+                <p class="text-sm leading-tight text-gray-600">Customer Support Specialst</p>
+                <div class="mt-4">
+                    <button
+                        class="text-purple-500 hover:text-white hover:bg-purple-500 border border-purple-500 text-xs font-semibold rounded-full px-4 py-1 leading-normal ">Message</button>
                 </div>
             </div>
-
-            <div class="input-group">
-                <button type="button" class="btn btn-default" id="cal">Calculator</button>
-            </div>
-
-            <div id="result"></div>
         </div>
-
     </div>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
 </body>
 
