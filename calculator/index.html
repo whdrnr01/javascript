@@ -11,12 +11,199 @@
 </head>
 
 <body class="bg-gray-200">
+
+    <div class="mx-auto bg-white mt-10 max-w-md border border-gray-500">
+        <div class="bg-black text-white px-4 py-2 text-5xl w-full screen h-20">
+
+        </div>
+
+        <div class="flex bg-orange-600 text-white buttons">
+            <!-- yellow -->
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-orange-300 hover:text-white"
+                data-num="*">*</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-orange-300 hover:text-white"
+                data-num="/">/</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-orange-300 hover:text-white"
+                data-num="-">-</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-orange-300 hover:text-white"
+                data-num="+">+</button>
+        </div>
+
+        <div class="flex">
+            <!-- grey -->
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num=".">.</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="9">9</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="8">8</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="7">7</button>
+        </div>
+
+        <div class="flex">
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="6">6</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="5">5</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="4">4</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="3">3</button>
+        </div>
+
+        <div class="flex">
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="2">2</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="1">1</button>
+            <button type="button" class="btn w-1/4 h-16 text-2xl font-bold hover:bg-blue-300 hover:text-white"
+                data-num="0">0</button>
+            <!-- green -->
+            <button type="button" class="btn-equal w-1/4 h-16 text-2xl font-bold hover:bg-green-300 bg-green-500"
+                data-num="=">=</button>
+        </div>
+
+        <div class="flex">
+            <!-- red -->
+            <button type="button"
+                class="btn-clear w-1/4 h-16 text-2xl font-bold hover:bg-red-300 bg-red-500 border-r border-grey-500"
+                data-num="C">C</button>
+        </div>
+    </div>
+
+    <!--     
+    <div class="mx-auto bg-white mt-10 max-w-md border border-gray-500">
+        <div class="bg-black text-white px-4 py-2 text-5xl w-full">
+            3
+        </div>
+
+        <div class="table w-full">
+            <div class="table-row">
+                <div
+                    class="table-cell bg-orange-400 text-white px-4 py-2 text-3xl border-b border-r border-gray-600 text-center hover:text-gray-600 hover:bg-orange-600">
+                    *
+                </div>
+                <div
+                    class="table-cell bg-orange-400 text-white px-4 py-2 text-3xl border-b border-r border-gray-600 text-center hover:text-gray-600 hover:bg-orange-600">
+                    /
+                </div>
+                <div
+                    class="table-cell bg-orange-400 text-white px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    -
+                </div>
+                <div
+                    class="table-cell bg-orange-400 text-white px-4 py-2 text-3xl border-b border-gray-600 text-center">
+                    +
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    .
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    9
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    8
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-gray-600 text-center">
+                    7
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    6
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    5
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    4
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-gray-600 text-center">
+                    3
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    2
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    1
+                </div>
+                <div
+                    class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-3xl border-b border-r border-gray-600 text-center">
+                    0
+                </div>
+                <div class="table-cell bg-green-600 text-black px-4 py-2 text-3xl border-b border-gray-600 text-center">
+                    =
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell bg-red-600 text-black px-4 py-2 text-3xl border-r border-gray-600 text-center">
+                    C
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 
+    <div class="mx-auto bg-white mt-10 max-w-md border border-gray-500">
+        <div class="bg-gray-600 text-2xl p-4 text-white h-16">2</div>
+
+        <div class="flex items-center justify-between mx-auto bg-yellow-500 h-16 ">
+            <div class="cell text-lg mx-auto text-2xl text-white text-bold">*</div>
+            <div class="cell text-lg mx-auto text-2xl text-white text-bold">/</div>
+            <div class="cell text-lg mx-auto text-2xl text-white text-bold">-</div>
+            <div class="cell text-lg mx-auto text-2xl text-white text-bold">+</div>
+        </div>
+
+        <div class="flex items-center justify-between mx-auto bg-gray-200 h-16">
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">.</div>
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">9</div>
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">8</div>
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">7</div>
+        </div>
+
+        <div class="flex items-center justify-between mx-auto bg-gray-200 h-16">
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">6</div>
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">5</div>
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">4</div>
+            <div class="cell text-lg mx-auto text-2xl text-gray-600 text-bold">3</div>
+        </div>
+
+        <div class="flex items-center justify-between mx-auto bg-gray-200 h-16">
+            <div class="cell text-center mx-auto text-2xl text-gray-600 text-bold w-1/4">2</div>
+            <div class="cell text-center mx-auto text-2xl text-gray-600 text-bold w-1/4">1</div>
+            <div class="cell text-center mx-auto text-2xl text-gray-600 text-bold w-1/4">0</div>
+            <div class="cell text-center mx-auto text-2xl text-gray-600 text-bold bg-green-500 w-1/4 h-16">=</div>
+        </div>
+
+        <div class="flex items-center justify-start mx-auto bg-gray-200 h-16">
+            <div class="cell text-center text-2xl text-bold w-1/4 bg-red-500 h-16">C</div>
+        </div>
+    </div>
     <div class="flex p-6 bg-white rounded-lg shadow-xl mx-auto max-w-md my-10">
         <div class="flex-shrink-0">
             <img src="img/chat-logo.png" class="h-12 w-12">
         </div>
         <div class="ml-6 pt-1">
-            <h4 class="text-xl text-gray-900 leading-tight">ChitChat</h4>
+            <h4 class="text-2xl text-gray-900 leading-tight">ChitChat</h4>
             <p class="text-base text-gray-600 leading-normal">You have a new message</p>
         </div>
     </div>
@@ -26,7 +213,7 @@
             <img src="img/sky.jpg" class="block mx-auto sm:mx-0 sm:flex-shrink-0 h-16 sm:h-24 rounded-full">
 
             <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
-                <p class="text-xl leading-tight">Chris Cookie</p>
+                <p class="text-2xl leading-tight">Chris Cookie</p>
                 <p class="text-sm leading-tight text-gray-600">Customer Support Specialst</p>
                 <div class="mt-4">
                     <button
@@ -35,6 +222,16 @@
             </div>
         </div>
     </div>
+
+    <div class="p-6 bg-white md:flex rounded-lg mx-auto max-w-md">
+        <img src="img/sky.jpg" class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6">
+        <div class="text-center md:text-left">
+            <h2 class="text-lg">Chris Cookie</h2>
+            <div class="text-purple-500">Cumstomer Support</div>
+            <div class="text-gray-600">chris@example.com</div>
+            <div class="text-gray-600">010-1234-5678</div>
+        </div>
+    </div> -->
     <script src="app.js"></script>
 </body>
 
