@@ -83,7 +83,7 @@ function print() {
     /*
     let liStrArray = liArray.filter((li) => {
         if (li.textContent.includes('e')) {
-            return li.textContent;
+            return li.textContent; 
         }
     });
     */
